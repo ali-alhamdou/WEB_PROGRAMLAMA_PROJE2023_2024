@@ -7,34 +7,94 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HospitalAutomation.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HospitalAutomation</a>
+                <a class="navbar-brand px-3 hospital-logo" asp-area="" asp-controller="Home" asp-action="Index">Serdivan @_localization.Getkey("str_Hospital")</a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                        @if (Thread.CurrentThread.CurrentCulture.Name == "tr-TR")
+                        {
+                            <img src="~/img/turkey.png" width="20px" />
+                        }
+                        else
+                        {
+                            <img src="~/img/united-states.png" width="20px" />
+                        }
+                    </button>
+                    <ul class="dropdown-menu" width="40px">
+                        <li class="dropdown-item"><a class="text-dark" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" style="text-decoration:none;"><img src="~/img/united-states.png" width="20px" /> USA</a></li>
+                        <li class="dropdown-item"><a class="text-dark" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR" style="text-decoration:none;"><img src="~/img/turkey.png" width="20px" /> TR</a></li>
+                    </ul>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@_localization.Getkey("str_AdminPanel")</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_DoctorPanel")</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_PatientPanel")</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Login")</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Register")</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm menu">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">                    
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@_localization.Getkey("str_Home")</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_About")</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Doctors")</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Reservation")</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Contact")</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/img/facebook.png" width="20px"/></a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/img/twitter.png" width="20px"/></a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><img src="~/img/instagram.png" width="20px"/></a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
     <footer class="border-top footer text-muted">
         <div class="container">

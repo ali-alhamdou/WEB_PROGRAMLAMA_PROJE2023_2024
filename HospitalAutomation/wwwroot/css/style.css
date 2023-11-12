@@ -1,0 +1,17 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.menu{
+    background-color:#d9efff;
+    font-weight:600;
+    margin-bottom:20px;
+}
+main{
+    border:1px solid black;
+}
+.menu li:not(:last-child){
+    border-right:1px solid #d4cece;
+}
+.hospital-logo {
+    font-weight: bolder;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}

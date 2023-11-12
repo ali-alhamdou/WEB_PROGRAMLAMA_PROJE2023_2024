@@ -9,8 +9,32 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\facebook.png",
+      "PackagePath": "staticwebassets\\img\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\instagram.png",
+      "PackagePath": "staticwebassets\\img\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\turkey.png",
+      "PackagePath": "staticwebassets\\img\\turkey.png"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\twitter.png",
+      "PackagePath": "staticwebassets\\img\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\united-states.png",
+      "PackagePath": "staticwebassets\\img\\united-states.png"
     },
     {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\js\\site.js",

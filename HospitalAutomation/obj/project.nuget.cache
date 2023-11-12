@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xPtThXP1etb0bncogv8UKLMy2gQvzoGFsMuhsnNtb/hiTx4OJhUEz0YxsXtmtHmOiMuWn9cjHSbQ6094ii3T6w==",
+  "dgSpecHash": "b87L1T2w869L/hf5tEzg87uRnzeXE0PvyaaNiViazpHxFamDdedyourNVPXHTMIGjKqvZrm5bGUsigcLZZ2gGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
+  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL MANARA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AL MANARA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

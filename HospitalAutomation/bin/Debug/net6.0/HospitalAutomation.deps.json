@@ -17,6 +17,14 @@
         },
         "runtime": {
           "HospitalAutomation.dll": {}
+        },
+        "resources": {
+          "en-US/HospitalAutomation.resources.dll": {
+            "locale": "en-US"
+          },
+          "tr-TR/HospitalAutomation.resources.dll": {
+            "locale": "tr-TR"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
