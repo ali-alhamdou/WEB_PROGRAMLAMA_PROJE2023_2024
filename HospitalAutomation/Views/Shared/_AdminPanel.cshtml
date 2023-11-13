@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HospitalAutomation</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HospitalAutomation.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand px-3 hospital-logo" asp-area="" asp-controller="Home" asp-action="Index">Serdivan @_localization.Getkey("str_Hospital")</a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                        @if (Thread.CurrentThread.CurrentCulture.Name == "tr-TR")
+                        {
+                            <img src="~/img/turkey.png" width="20px" />
+                        }
+                        else
+                        {
+                            <img src="~/img/united-states.png" width="20px" />
+                        }
+                    </button>
+                    <ul class="dropdown-menu" width="40px">
+                        <li class="dropdown-item"><a class="text-dark" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" style="text-decoration:none;"><img src="~/img/united-states.png" width="20px" /> USA</a></li>
+                        <li class="dropdown-item"><a class="text-dark" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR" style="text-decoration:none;"><img src="~/img/turkey.png" width="20px" /> TR</a></li>
+                    </ul>
+                </div>
+                <a class="text-dark" href="~/Home/Index" style="text-decoration:none;">@_localization.Getkey("str_GotoSite")</a>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="mx-auto row">
+            <aside class="sidebar col-md-2">
+                <ul class="sidebar-bar p-3">
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Index">@_localization.Getkey("str_MyProfile")</a></li>
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Departments">@_localization.Getkey("str_Departments")</a></li>
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Doctors">@_localization.Getkey("str_Doctors")</a></li>
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Ships">@_localization.Getkey("str_Ships")</a></li>
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Patients">@_localization.Getkey("str_Patients")</a></li>
+                    <li class="bar-item py-1 text-center"><a class="bar-item-link" asp-controller="AdminPanel" asp-action="Reservations">@_localization.Getkey("str_Reservations")</a></li>
+                </ul>
+            </aside>
+            <section class="sec-content col-md-10 p-4">
+                @RenderBody()
+            </section>
+        </div>
+    </main>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

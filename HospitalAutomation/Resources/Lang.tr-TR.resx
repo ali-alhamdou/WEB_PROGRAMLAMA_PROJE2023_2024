@@ -126,11 +126,17 @@
   <data name="str_Contact" xml:space="preserve">
     <value>İletişim</value>
   </data>
+  <data name="str_Departments" xml:space="preserve">
+    <value>Departmanlar</value>
+  </data>
   <data name="str_DoctorPanel" xml:space="preserve">
     <value>Doktor Panel</value>
   </data>
   <data name="str_Doctors" xml:space="preserve">
     <value>Doktorlarımız</value>
+  </data>
+  <data name="str_GotoSite" xml:space="preserve">
+    <value>Siteye git</value>
   </data>
   <data name="str_Home" xml:space="preserve">
     <value>Anasayfa</value>
@@ -141,13 +147,25 @@
   <data name="str_Login" xml:space="preserve">
     <value>Giriş yap</value>
   </data>
+  <data name="str_MyProfile" xml:space="preserve">
+    <value>Profilim</value>
+  </data>
   <data name="str_PatientPanel" xml:space="preserve">
     <value>Hasta Panel</value>
+  </data>
+  <data name="str_Patients" xml:space="preserve">
+    <value>Hastalar</value>
   </data>
   <data name="str_Register" xml:space="preserve">
     <value>Kayıt ol</value>
   </data>
   <data name="str_Reservation" xml:space="preserve">
     <value>Online Randevu</value>
+  </data>
+  <data name="str_Reservations" xml:space="preserve">
+    <value>Randevular</value>
+  </data>
+  <data name="str_Ships" xml:space="preserve">
+    <value>Çalışma Saatleri</value>
   </data>
 </root>

@@ -1,0 +1,15 @@
+﻿
+.sidebar {
+    background-color: #d9efff;
+}
+.bar-item{
+    list-style-type:none;
+}
+.bar-item:not(:last-child) {
+    border-bottom: 1px solid #d4cece;
+}
+.bar-item-link{
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+}

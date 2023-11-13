@@ -126,11 +126,17 @@
   <data name="str_Contact" xml:space="preserve">
     <value>Contact Us</value>
   </data>
+  <data name="str_Departments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
   <data name="str_DoctorPanel" xml:space="preserve">
     <value>Doctor Panel</value>
   </data>
   <data name="str_Doctors" xml:space="preserve">
     <value>Our Doctors</value>
+  </data>
+  <data name="str_GotoSite" xml:space="preserve">
+    <value>Go to Site</value>
   </data>
   <data name="str_Home" xml:space="preserve">
     <value>Home</value>
@@ -141,13 +147,25 @@
   <data name="str_Login" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="str_MyProfile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
   <data name="str_PatientPanel" xml:space="preserve">
     <value>Patient Panel</value>
+  </data>
+  <data name="str_Patients" xml:space="preserve">
+    <value>Patients</value>
   </data>
   <data name="str_Register" xml:space="preserve">
     <value>Register</value>
   </data>
   <data name="str_Reservation" xml:space="preserve">
     <value>Online Reservation</value>
+  </data>
+  <data name="str_Reservations" xml:space="preserve">
+    <value>Reservations</value>
+  </data>
+  <data name="str_Ships" xml:space="preserve">
+    <value>Ships</value>
   </data>
 </root>

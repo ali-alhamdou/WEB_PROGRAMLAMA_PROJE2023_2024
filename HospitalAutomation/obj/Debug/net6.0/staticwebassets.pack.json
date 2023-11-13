@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\HospitalAutomation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\instagram.png",
       "PackagePath": "staticwebassets\\img\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\pp.jpg",
+      "PackagePath": "staticwebassets\\img\\pp.jpg"
     },
     {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\wwwroot\\img\\turkey.png",
