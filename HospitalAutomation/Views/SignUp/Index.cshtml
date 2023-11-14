@@ -1,0 +1,21 @@
+﻿@model UserSignUpViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="mx-auto col-md-4">
+    <h3 class="text-center">KULLANICI KAYIT EKRANI</h3>
+    <form role="form" asp-action="Index">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <table class="table">
+            <tr><td class="text-center"><span asp-validation-for="@Model.NameSurname" class="text-danger"></span><input type="text" asp-for="@Model.NameSurname" placeholder="Name-Surname" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.Mail" class="text-danger"></span><input type="email" asp-for="@Model.Mail" placeholder="Mail" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.UserName" class="text-danger"></span><input type="text" asp-for="@Model.UserName" placeholder="UserName" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.Password" class="text-danger"></span><input type="password" asp-for="@Model.Password" placeholder="Password" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span><input type="password" asp-for="@Model.ConfirmPassword" placeholder="Confirm Password" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.About" class="text-danger"></span><input type="text" asp-for="@Model.About" placeholder="About" /></td></tr>
+        </table>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+

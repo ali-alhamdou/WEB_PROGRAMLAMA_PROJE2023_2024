@@ -1,3 +1,5 @@
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using HospitalAutomation.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
@@ -8,6 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add Identity
+builder.Services.AddDbContext<Context>();
+builder.Services.AddIdentity<AppUser, AppRole>(x => {
+    x.Password.RequireUppercase = false;
+    x.Password.RequireNonAlphanumeric = false;
+}).AddEntityFrameworkStores<Context>();
+
 #region Localization
 builder.Services.AddSingleton<LanguageService>();
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
