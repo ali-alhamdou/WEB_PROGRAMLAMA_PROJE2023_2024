@@ -1,0 +1,18 @@
+﻿@model UserSignInViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mx-auto col-md-4">
+    <h3 class="text-center">KULLANICI GİRİŞ EKRANI</h3>
+    <form role="form" asp-action="Index">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <table class="table">
+            <tr><td class="text-center"><span asp-validation-for="@Model.username" class="text-danger"></span><input type="text" asp-for="@Model.username" placeholder="Username" /></td></tr>
+            <tr><td class="text-center"><span asp-validation-for="@Model.password" class="text-danger"></span><input type="password" asp-for="@Model.password" placeholder="Password" /></td></tr>
+        </table>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+

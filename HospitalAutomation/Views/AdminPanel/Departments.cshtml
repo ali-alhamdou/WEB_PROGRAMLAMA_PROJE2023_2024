@@ -1,20 +1,42 @@
-﻿
+﻿@model EntityLayer.Concrete.Department
 @{
     ViewData["Title"] = "Departments";
     Layout = "~/Views/Shared/_AdminPanel.cshtml";
 }
+<!-- Button trigger modal -->
+<!-- Modal -->
+<form method="post">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Department Name</label><br />
+                    <input type="text" asp-for="@Model.DepartmentName" class="col-12" />
+                    <br />
+                    <label>About</label><br />
+                    <textarea asp-for="@Model.DepartmentAbout" class="col-12"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<table class="table">
-    <tr>
-        <th><h3>Departments</h3></th>
-        <th class="text-end"><button class="btn btn-success">Veri girişi</button></th>
-    </tr>
-</table>
-<table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Button</th>
-    </tr>
-</table>
-
+    <table class="table">
+        <tr>
+            <th><h3>Departments</h3></th>
+            <th class="text-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Veri Girişi
+                </button>
+            </th>
+        </tr>
+    </table>
+</form>
+@await Component.InvokeAsync("DepartmentList")

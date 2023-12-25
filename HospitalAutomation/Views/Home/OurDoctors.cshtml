@@ -1,0 +1,28 @@
+﻿@using EntityLayer.Concrete
+@model List<Doctor>
+@{
+    ViewData["Title"] = "Our Doctors";
+}
+<div class="container">
+	<div class="row justify-content-center">
+		@foreach (var item in Model)
+		{
+			<div class="col-lg-3 col-md-5 border m-1 p-2">
+				<div class="text-center">
+					<img src="@item.Image" width="200px" alt="">
+				</div>
+				<div class="">
+					<ul class="my-2">
+						<li>
+							@item.Department.DepartmentName
+						</li>
+					</ul>
+					<h5 class="">
+						@item.DoctorName
+					</h5>
+					<p class="card-text mb-3">@item.DoctorAbout</p>
+				</div>
+			</div>
+		}
+	</div>
+</div>

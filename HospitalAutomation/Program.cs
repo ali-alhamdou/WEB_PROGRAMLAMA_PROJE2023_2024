@@ -49,8 +49,9 @@ builder.Services.Configure<RequestLocalizationOptions>(
 var app = builder.Build();
 // localization
 app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
-
-
+//Session
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

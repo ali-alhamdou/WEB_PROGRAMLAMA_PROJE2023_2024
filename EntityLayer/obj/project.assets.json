@@ -1904,11 +1904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",

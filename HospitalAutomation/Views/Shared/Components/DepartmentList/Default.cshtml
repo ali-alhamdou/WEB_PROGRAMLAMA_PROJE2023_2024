@@ -1,0 +1,19 @@
+﻿@using EntityLayer.Concrete
+@model List<Department>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>About</th>
+        <th>Button</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.DepartmentID</td>
+            <td>@item.DepartmentName</td>
+            <td class="text-wrap">@item.DepartmentAbout</td>
+            <td><a href="/AdminPanel/DepartmentDelete/@item.DepartmentID" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+</table>

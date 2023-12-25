@@ -1,23 +1,46 @@
-﻿
+﻿@model EntityLayer.Concrete.Doctor
 @{
     ViewData["Title"] = "Doctors";
     Layout = "~/Views/Shared/_AdminPanel.cshtml";
 }
 
-<table class="table">
-    <tr>
-        <th><h3>Doctors</h3></th>
-        <th class="text-end"><button class="btn btn-success">Veri girişi</button></th>
-    </tr>
-</table>
-<table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Photograph</th>
-        <th>Name</th>
-        <th>Department</th>
-        <th>Button</th>
-        <th>Button</th>
-    </tr>
-</table>
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Image" hidden />
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Doctor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Doctor Profile Photo</label><br />
+                    <input type="file" name="file" class="form-control col-3" />
+                    <label>Doctor Name - Surname</label><br />
+                    <input type="text" asp-for="@Model.DoctorName" class="col-9" />
+                    <br />
+                    <label>Departmant</label><br />
+                    <select asp-for="DepartmentID" asp-items="ViewBag.Departments" class="form-select"></select>
+                    <label>About</label><br />
+                    <textarea asp-for="@Model.DoctorAbout" class="col-12"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <table class="table">
+        <tr>
+            <th><h3>Doctors</h3></th>
+            <th class="text-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Veri Girişi
+                </button>
+            </th>
+        </tr>
+    </table>
+</form>
+@await Component.InvokeAsync("DoctorList")

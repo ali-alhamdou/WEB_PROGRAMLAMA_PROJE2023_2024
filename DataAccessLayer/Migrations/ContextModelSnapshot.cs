@@ -60,19 +60,12 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("About")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("DepartmentID")
-                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -81,19 +74,11 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NameSurname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -115,9 +100,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ShipID")
-                        .HasColumnType("int");
-
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -127,8 +109,6 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentID");
-
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -136,8 +116,6 @@ namespace DataAccessLayer.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.HasIndex("ShipID");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -171,7 +149,7 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DoctorID"), 1L, 1);
 
-                    b.Property<int>("DepartmentID")
+                    b.Property<int?>("DepartmentID")
                         .HasColumnType("int");
 
                     b.Property<string>("DoctorAbout")
@@ -182,7 +160,11 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ShipID")
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ShipID")
                         .HasColumnType("int");
 
                     b.HasKey("DoctorID");
@@ -202,13 +184,6 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PatientId"), 1L, 1);
 
-                    b.Property<string>("PatientAbout")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("PatientBirthday")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("PatientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -226,9 +201,6 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservationID"), 1L, 1);
 
-                    b.Property<int?>("AppUserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("DoctorID")
                         .HasColumnType("int");
 
@@ -238,12 +210,10 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("ReservationDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("ReservationTime")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("ReservationTime")
+                        .HasColumnType("time");
 
                     b.HasKey("ReservationID");
-
-                    b.HasIndex("AppUserId");
 
                     b.HasIndex("DoctorID");
 
@@ -260,16 +230,22 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShipID"), 1L, 1);
 
-                    b.Property<DateTime>("BreakEnd")
+                    b.Property<TimeSpan>("BreakEnd")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("BreakStart")
+                        .HasColumnType("time");
+
+                    b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("BreakStart")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("ShipEnd")
+                        .HasColumnType("time");
 
-                    b.Property<DateTime>("ShipEnd")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("ShipStart")
+                        .HasColumnType("time");
 
-                    b.Property<DateTime>("ShipStart")
+                    b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ShipID");
@@ -380,38 +356,15 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.AppUser", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Department", "Department")
-                        .WithMany()
-                        .HasForeignKey("DepartmentID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EntityLayer.Concrete.Ship", "Ship")
-                        .WithMany()
-                        .HasForeignKey("ShipID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Department");
-
-                    b.Navigation("Ship");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Doctor", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Department", "Department")
                         .WithMany("Doctor")
-                        .HasForeignKey("DepartmentID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DepartmentID");
 
                     b.HasOne("EntityLayer.Concrete.Ship", "Ship")
                         .WithMany()
-                        .HasForeignKey("ShipID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ShipID");
 
                     b.Navigation("Department");
 
@@ -420,10 +373,6 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Reservation", b =>
                 {
-                    b.HasOne("EntityLayer.Concrete.AppUser", null)
-                        .WithMany("Reservations")
-                        .HasForeignKey("AppUserId");
-
                     b.HasOne("EntityLayer.Concrete.Doctor", "Doctor")
                         .WithMany("Reservations")
                         .HasForeignKey("DoctorID")
@@ -490,11 +439,6 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.AppUser", b =>
-                {
-                    b.Navigation("Reservations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Department", b =>

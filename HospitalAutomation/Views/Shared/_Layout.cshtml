@@ -37,7 +37,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@_localization.Getkey("str_AdminPanel")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="AdminPanel" asp-action="Index">@_localization.Getkey("str_AdminPanel")</a>
                         </li>
                         <li class="nav-item px-1">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_DoctorPanel")</a>
@@ -46,7 +46,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_PatientPanel")</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Login")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SignIn" asp-action="Index">@_localization.Getkey("str_Login")</a>
                         </li>
                         <li class="nav-item px-1">
                             <a class="nav-link text-dark" asp-area="" asp-controller="SignUp" asp-action="Index">@_localization.Getkey("str_Register")</a>
@@ -66,10 +66,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_About")</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Doctors")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OurDoctors">@_localization.Getkey("str_Doctors")</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Reservation")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Index">@_localization.Getkey("str_Reservation")</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Contact")</a>

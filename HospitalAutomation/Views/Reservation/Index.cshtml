@@ -1,0 +1,15 @@
+﻿@using EntityLayer.Concrete
+@model List<Doctor>
+@{
+    ViewData["Title"] = "Reservations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Reservations</h5>
+<select asp-items="ViewBag.DepartmentsFor" class="form-select"></select>
+<select>
+    @foreach(var item in Model)
+    {
+        <option>@item.DoctorName</option>
+    }
+</select>

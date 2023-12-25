@@ -27,11 +27,11 @@ namespace HospitalAutomation.Controllers
                 {
                     Email = userSUV.Mail,
                     UserName = userSUV.UserName,
-                    NameSurname = userSUV.NameSurname,
+                   /* NameSurname = userSUV.NameSurname,
                     About = userSUV.About,
                     Image="~/img/pp.jpg",
                     DepartmentID=1,
-                    ShipID=1
+                    ShipID=1*/
                 };
                 var result = await _userManager.CreateAsync(user,userSUV.Password);
                 if (result.Succeeded) { 

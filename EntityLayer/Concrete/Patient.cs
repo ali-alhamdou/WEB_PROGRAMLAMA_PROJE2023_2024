@@ -12,8 +12,6 @@ namespace EntityLayer.Concrete
         [Key]
         public int PatientId { get; set; }
         public string PatientName { get; set; }
-        public DateTime PatientBirthday { get; set; }
-        public string PatientAbout { get; set; }
         public List<Reservation> Reservations { get; set; }
     }
 }

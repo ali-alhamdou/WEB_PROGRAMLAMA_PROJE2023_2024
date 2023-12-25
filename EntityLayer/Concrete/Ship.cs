@@ -11,9 +11,11 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int ShipID { get; set; }
-        public DateTime ShipStart { get; set; }
-        public DateTime ShipEnd { get; set; }
-        public DateTime BreakStart { get; set; }
-        public DateTime BreakEnd { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public TimeSpan ShipStart { get; set; }
+        public TimeSpan ShipEnd { get; set; }
+        public TimeSpan BreakStart { get; set; }
+        public TimeSpan BreakEnd { get; set; }
     }
 }

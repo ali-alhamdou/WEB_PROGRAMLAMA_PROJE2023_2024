@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj": {}
+    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
-        "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,70 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -93,14 +155,14 @@
         }
       }
     },
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj": {
+    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
+        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
         "projectName": "HospitalAutomation",
-        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
+        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
         "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\obj\\",
+        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -182,11 +244,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\WEB PROGRAMLAMA\\New folder\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }

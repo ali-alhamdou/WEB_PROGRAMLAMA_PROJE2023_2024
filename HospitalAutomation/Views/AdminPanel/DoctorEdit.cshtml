@@ -1,0 +1,42 @@
+﻿@using EntityLayer.Concrete
+@model Doctor
+@{
+    ViewData["Title"] = "DoctorEdit";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <th><h3>Doctor Edit</h3></th>
+        <th class="text-end">
+            <a class="btn btn-danger text-white" asp-controller="AdminPanel" asp-action="Doctors">
+                Cancel
+            </a>
+        </th>
+    </tr>
+</table>
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="@Model.Image" hidden />
+    <input asp-for="@Model.DepartmentID" hidden />
+    <input asp-for="@Model.ShipID" hidden />
+    <input asp-for="@Model.DoctorID" hidden />
+    <table class="table border">
+        <tr>
+            <td><img src="@Model.Image"  width="200px"/></td>
+            <td><input type="file" name="file" class="form-control col-3" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" asp-for="@Model.DoctorName" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><textarea asp-for="@Model.DoctorAbout" class="col-12"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" class="btn btn-primary">Edit</button></td>
+        </tr>
+    </table>
+
+</form>
