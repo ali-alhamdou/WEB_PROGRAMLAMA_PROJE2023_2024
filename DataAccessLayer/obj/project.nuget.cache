@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aLx1PJQaq+xdJDFVOT/vWCAN0avjV7ln0+3PPZTu0jDsSbEI4hhWPb9QS6KyhckNv0VoVfITzFCIMFkwBdf16w==",
+  "dgSpecHash": "LmvK5T6JSXaFVQKNLEQ+gvvEyRmdJeG8bFKvhysMhh+SDMheq6MtIDPIqs9t2HGsxE+bw/JmaD2Vt2+QZrEIUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\5. tearm\\HospitalAutomation_-6\\HospitalAutomation\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL MANARA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AL MANARA\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

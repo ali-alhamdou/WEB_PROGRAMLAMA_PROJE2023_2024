@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=CTN;database=HospitalAutomation; integrated security=True; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=HospitalAutomation; integrated security=True; TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

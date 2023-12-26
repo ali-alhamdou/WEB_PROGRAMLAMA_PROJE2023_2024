@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\HospitalAutomation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\wwwroot\\calendar\\mc-calendar.min.css",
+      "PackagePath": "staticwebassets\\calendar\\mc-calendar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\wwwroot\\calendar\\mc-calendar.min.js",
+      "PackagePath": "staticwebassets\\calendar\\mc-calendar.min.js"
+    },
+    {
       "Id": "C:\\Users\\me_ct\\Desktop\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalAutomation.ViewComponents.AdminPanel
 {
-    public class DepartmentList : ViewComponent
+    public class Departments : ViewComponent
     {
         DepartmentManager _dm = new DepartmentManager(new EfDepartmentRepository());
         public IViewComponentResult Invoke()

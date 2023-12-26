@@ -11,17 +11,11 @@ namespace HospitalAutomation.Controllers
         DepartmentManager _dm = new DepartmentManager(new EfDepartmentRepository());
         DoctorManager _docMan = new DoctorManager(new EfDoctorRepository());
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
-            IEnumerable<SelectListItem> DepartmentList = _dm.GetList()
-                .Select(k => new SelectListItem
-                {
-                    Text = k.DepartmentName,
-                    Value = k.DepartmentID.ToString()
-                });
-            ViewBag.DepartmentsFor = DepartmentList;
-            var values = _docMan.GetList();
-            return View(values);
+            ViewBag.DocIDForRes = id;
+            return View();
         }
+
     }
 }
