@@ -164,14 +164,9 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ShipID")
-                        .HasColumnType("int");
-
                     b.HasKey("DoctorID");
 
                     b.HasIndex("DepartmentID");
-
-                    b.HasIndex("ShipID");
 
                     b.ToTable("Doctors");
                 });
@@ -201,6 +196,9 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservationID"), 1L, 1);
 
+                    b.Property<int>("DepartmentID")
+                        .HasColumnType("int");
+
                     b.Property<int>("DoctorID")
                         .HasColumnType("int");
 
@@ -210,47 +208,15 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("ReservationDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<TimeSpan>("ReservationTime")
-                        .HasColumnType("time");
-
                     b.HasKey("ReservationID");
+
+                    b.HasIndex("DepartmentID");
 
                     b.HasIndex("DoctorID");
 
                     b.HasIndex("PatientID");
 
                     b.ToTable("Reservations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Ship", b =>
-                {
-                    b.Property<int>("ShipID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShipID"), 1L, 1);
-
-                    b.Property<TimeSpan>("BreakEnd")
-                        .HasColumnType("time");
-
-                    b.Property<TimeSpan>("BreakStart")
-                        .HasColumnType("time");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<TimeSpan>("ShipEnd")
-                        .HasColumnType("time");
-
-                    b.Property<TimeSpan>("ShipStart")
-                        .HasColumnType("time");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ShipID");
-
-                    b.ToTable("Ships");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -362,17 +328,17 @@ namespace DataAccessLayer.Migrations
                         .WithMany("Doctor")
                         .HasForeignKey("DepartmentID");
 
-                    b.HasOne("EntityLayer.Concrete.Ship", "Ship")
-                        .WithMany()
-                        .HasForeignKey("ShipID");
-
                     b.Navigation("Department");
-
-                    b.Navigation("Ship");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Reservation", b =>
                 {
+                    b.HasOne("EntityLayer.Concrete.Department", "Department")
+                        .WithMany("Reservations")
+                        .HasForeignKey("DepartmentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("EntityLayer.Concrete.Doctor", "Doctor")
                         .WithMany("Reservations")
                         .HasForeignKey("DoctorID")
@@ -384,6 +350,8 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("PatientID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Department");
 
                     b.Navigation("Doctor");
 
@@ -444,6 +412,8 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Department", b =>
                 {
                     b.Navigation("Doctor");
+
+                    b.Navigation("Reservations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Doctor", b =>

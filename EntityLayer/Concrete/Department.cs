@@ -14,5 +14,6 @@ namespace EntityLayer.Concrete
         public string DepartmentName { get; set; }
         public string DepartmentAbout { get; set; }
         public List<Doctor> Doctor { get; set; }
+        public List<Reservation> Reservations { get; set; }
     }
 }

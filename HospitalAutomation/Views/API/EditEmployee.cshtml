@@ -1,0 +1,17 @@
+﻿@model HospitalAutomation.Controllers.Class1
+@{
+    ViewData["Title"] = "EditEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit Employee with API</h1>
+<form method="post">
+    <label>#</label>
+    @Html.TextBoxFor(c=>c.ID, new {@class = "form-control"})
+    <br />
+    <label>Name</label>
+    @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-primary">Edit</button>
+</form>
+

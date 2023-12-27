@@ -1,0 +1,25 @@
+﻿@using HospitalAutomation.Controllers
+@model List<Class1>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <th>@item.ID</th>
+            <th>@item.Name</th>
+            <th><a href="/API/DeleteEmployee/@item.ID" class="btn btn-outline-danger">DELETE</a></th>
+            <th><a href="/API/EditEmployee/@item.ID" class="btn btn-outline-primary">EDIT</a></th>
+        </tr>
+    }
+</table>
+<a href="/API/AddEmployee/" class="btn btn-outline-success">ADD</a>
