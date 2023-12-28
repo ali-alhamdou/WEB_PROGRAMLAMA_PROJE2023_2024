@@ -6,6 +6,7 @@ using HospitalAutomation.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 
 namespace HospitalAutomation.Controllers
@@ -40,8 +41,14 @@ namespace HospitalAutomation.Controllers
             var values = _docMan.ListDoctorWithDepartment();
             return View(values);
         }
+		public IActionResult GetDoctor(int id)
+		{
+			Doctor values = _docMan.ListDoctorWithDepartment().Where(x=>x.DoctorID==id).FirstOrDefault();
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+			return View(values);
+		}
+
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

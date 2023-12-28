@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xe55pfRy9KcywzRibWJexUhs4xTbLQHJf6Q6EyX2r+aFnkesWj4xnCqTP2B4jUfYMkqvUUPHhXXky1mPAhdCgw==",
+  "dgSpecHash": "CQQcJtNSxzIgrUN8IoAH7hhM9bVXbxU8j4+E9Y5mdbuwE8TqhL9c0qrGaK1mSIQACRG4OY/7xS0zW6LSG9oyBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation -7\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
+  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\HospitalAutomation\\HospitalAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL MANARA\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\AL MANARA\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

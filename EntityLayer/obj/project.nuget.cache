@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sf30PVerbfBhhkQXopTIyEenJ1IsxHwcI47G2HiK4Mjz3KqhaQtcOBBgAZ2TgTXOJXJE5lc7d04W/cPnUIhvVQ==",
+  "dgSpecHash": "HAkZnCAd28bL+2J0xrHC3cjRxC/Ig9LAmpD+EL44ysQAo0Jh4ZjxCAW1KmSCUMj86feJeWfW+W4v2DuWza3Xcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation -7\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL MANARA\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\AL MANARA\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

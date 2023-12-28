@@ -11,6 +11,7 @@ namespace HospitalAutomation.Controllers
         ReservationManager _resMan = new ReservationManager(new EfReservationRepository());
         DepartmentManager _deptMan = new DepartmentManager(new EfDepartmentRepository());
         DoctorManager _docMan = new DoctorManager(new EfDoctorRepository());
+        PatientManager _patMan = new PatientManager(new EfPatientRepository());
         public IActionResult Index()
         {
             List<Reservation> reservations = _resMan.ListReservationWithDD();

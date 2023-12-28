@@ -38,7 +38,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item px-1">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="AdminPanel" asp-action="Index">@_localization.Getkey("str_AdminPanel")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">@_localization.Getkey("str_AdminPanel")</a>
                         </li>
                         <li class="nav-item px-1">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_DoctorPanel")</a>
@@ -70,7 +70,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OurDoctors">@_localization.Getkey("str_Doctors")</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Index">@_localization.Getkey("str_Reservation")</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Create">@_localization.Getkey("str_Reservation")</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@_localization.Getkey("str_Contact")</a>
@@ -93,7 +93,7 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="pb-3">
+    <main class="py-3">
         @RenderBody()
     </main>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

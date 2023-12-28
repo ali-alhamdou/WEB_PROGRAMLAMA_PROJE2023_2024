@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Doctor
+@{
+    ViewData["Title"] = "GetDoctor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mx-auto col-lg-4 col-md-7 col-sm-11 bg-secondary px-3 py-5">
+    <table class="table table-bordered mx-auto justify-content-center bg-white">
+        <tr>
+            <td class="text-center">
+                <img src="@Model.Image" width="200px" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <strong>@Model.DoctorName</strong>  -  @Model.Department.DepartmentName
+            </td>
+        </tr>
+        <tr>
+            <td class="px-4">
+                <p>@Model.DoctorAbout</p>
+            </td>
+        </tr>
+    </table>
+</div>
+

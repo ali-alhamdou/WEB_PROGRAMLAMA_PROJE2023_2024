@@ -1,4 +1,6 @@
-﻿using EntityLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
 using HospitalAutomation.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +10,7 @@ namespace HospitalAutomation.Controllers
     public class SignUpController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+        PatientManager _patMan = new PatientManager(new EfPatientRepository());
 
         public SignUpController(UserManager<AppUser> userManager)
         {
@@ -35,6 +38,11 @@ namespace HospitalAutomation.Controllers
                 };
                 var result = await _userManager.CreateAsync(user,userSUV.Password);
                 if (result.Succeeded) { 
+                    Patient patient = new Patient();
+                    patient.PatientName = userSUV.NameSurname;
+                    patient.UserName = userSUV.UserName;
+                    patient.Mail = userSUV.Mail;
+                    _patMan.TAdd(patient);
                     return RedirectToAction("Index", "Home");
                 }
                 else
