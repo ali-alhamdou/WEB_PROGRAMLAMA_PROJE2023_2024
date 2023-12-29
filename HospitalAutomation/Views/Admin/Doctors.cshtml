@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Concrete
+@model List<Doctor>
+@{
+    ViewData["Title"] = "Doctors";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-2 m-1 py-2 px-3 border border-dark text-center">
+                <img src="@item.Image" width="50px" />
+                <hr />
+                <strong>@item.DoctorName</strong>
+                <br />
+                <i>@item.Department.DepartmentName</i>
+                <hr />
+                <a class="btn btn-outline-primary" href="/Admin/CheckDoctor/@item.DoctorID">Check</a>
+            </div>
+
+        }
+    </div>
+</div>
+

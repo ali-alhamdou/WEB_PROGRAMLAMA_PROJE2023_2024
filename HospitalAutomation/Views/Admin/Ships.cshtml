@@ -1,0 +1,93 @@
+﻿@using EntityLayer.Concrete
+@model List<Ship>
+@{
+    ViewData["Title"] = "Ships";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+<div class="row">
+    <input id="delid" placeholder="Ship Id" />
+    <button type="button" id="btnDelShipBy" class="btn btn-outline-danger col"> Delete </button>
+</div>
+<div class="row justify-content-center">
+    <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-2 px-3 border border-dark text-center">
+        <label>  Ship Name :</label>
+        <input id ="nameAdd" type="text" placeholder="Ship Name" />
+        <hr />
+        <label> Ship Start :</label>
+        <input id="shipstartAdd" type="time" placeholder="Ship Start" />
+        <br />
+        <label>   Ship End :</label>
+        <input id="shipendAdd" type="time" placeholder="Ship End" />
+        <br />
+        <label>Break Start :</label>
+        <input id="breakstartAdd" type="time" placeholder="Break Start" />
+        <br />
+        <label>  Break End :</label>
+        <input id="breakendAdd" type="time" placeholder="Break End" />
+        <br />
+        <button type="button" id="btnAddShipBy" class="btn btn-outline-success col"> Add </button>
+    </div>
+    @foreach (var item in Model)
+    {
+
+        <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-2 px-3 border border-dark text-center">
+            <label>  Ship ID :</label>
+            <label>@item.ShipID</label>
+            <br />
+            <label>  Ship Name :</label>
+            <input type="text" value="@item.ShipName" />
+            <hr />
+            <label> Ship Start :</label>
+            <input type="time" value="@item.ShipStart" />
+            <br />
+            <label>   Ship End :</label>
+            <input type="time" value="@item.ShipEnd" />
+            <br />
+            <label>Break Start :</label>
+            <input type="time" value="@item.BreakStart" />
+            <br />
+            <label>  Break End :</label>
+            <input type="time" value="@item.BreakEnd" />
+        </div>
+
+    }
+</div>
+@section Scripts {
+
+    <script>
+        $("#btnAddShipBy").click(function () {
+            let shhip = {
+                ShipName: $("#nameAdd").val(),
+                ShipStart: $("#shipstartAdd").val(),
+                ShipEnd: $("#shipendtAdd").val(),
+                BreakStart: $("#breakstartAdd").val(),
+                BreakEnd: $("#breakendAdd").val()
+            };
+            $.ajax({
+                type: "post",
+                url: "/Admin/AddShip/",
+                data: shhip,
+                success: function (func) {
+                    alert("Ship Added");
+                    window.location.reload(1);
+                }
+            });
+        });
+
+        $("#btnDelShipBy").click(x => {
+            let id = $("#delid").val();
+            $.ajax({
+                url: "/Admin/DeleteShip/",
+                data: { delid: id },
+                type: "post",
+                dataType: "json",
+                success: function (func) {
+                    alert("Ship Deleted");
+                    window.location.reload(1);
+                }
+            });
+        });
+
+    </script>
+
+}

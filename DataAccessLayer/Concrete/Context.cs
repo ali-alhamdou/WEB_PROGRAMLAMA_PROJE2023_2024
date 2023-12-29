@@ -24,6 +24,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Ship> Ships { get; set; }
 
     }
 }

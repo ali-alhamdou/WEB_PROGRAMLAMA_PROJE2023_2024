@@ -235,6 +235,35 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Reservations");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Ship", b =>
+                {
+                    b.Property<int>("ShipID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShipID"), 1L, 1);
+
+                    b.Property<TimeSpan>("BreakEnd")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("BreakStart")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("ShipEnd")
+                        .HasColumnType("time");
+
+                    b.Property<string>("ShipName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<TimeSpan>("ShipStart")
+                        .HasColumnType("time");
+
+                    b.HasKey("ShipID");
+
+                    b.ToTable("Ships");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.Property<int>("Id")

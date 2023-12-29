@@ -1,0 +1,94 @@
+﻿@model EntityLayer.Concrete.Doctor
+@{
+    ViewData["Title"] = "CheckDoctor";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <input id="" asp-for="@Model.Image" hidden />
+    <input id="docid" asp-for="@Model.DoctorID" hidden />
+<div class="row">
+    <div class="mx-auto bg-secondary px-3 py-5">
+        <table class="table table-bordered mx-auto justify-content-center bg-white">
+            <tr>
+                <th class="px-4">
+                    <img src="@Model.Image" width="50px" alt="">
+                </th>
+                <td class="text-center">
+                    <input id="docimage" value="@Model.Image" type="file" name="file" class="form-control col-3" />
+                </td>
+            </tr>
+            <tr>
+                <th class="px-4">
+                    Name - Surname
+                </th>
+                <td class="px-4">
+                        <input id="docname" asp-for="@Model.DoctorName" value="@Model.DoctorName" />
+                </td>
+            </tr>
+            <tr>
+                <th class="px-4">
+                    Department
+                </th>
+                <td class="px-4">
+                    <select id="docdepartmentid" asp-for="DepartmentID" class="form-control" asp-items="ViewBag.Depts"></select>
+                </td>
+            </tr>
+            <tr>
+                <th class="px-4">
+                    Username
+                </th>
+                <td class="px-4">
+                        <input id="docusername" asp-for="@Model.UserName" value="@Model.UserName" />
+                </td>
+            </tr>
+            <tr>
+                <th class="px-4">
+                    E-Mail
+                </th>
+                <td class="px-4">
+                        <input id="docmail" asp-for="@Model.Mail" value="@Model.Mail" />
+                </td>
+            </tr>
+            <tr>
+                <th class="px-4">
+                    About
+                </th>
+                <td class="px-4">
+                        <textarea class="col-12 d-block" asp-for="@Model.DoctorAbout" id="docabout" value="" rows="7">@Model.DoctorAbout</textarea>
+                </td>
+            </tr>
+        </table>
+            <div class="row">
+                <button type="button" id="btnDelDocBy" class="btn btn-outline-danger col"> Delete </button>
+                <button type="submit" id="btnUpDeptBy" class="btn btn-outline-primary col"> Update </button>
+            </div>
+    </div>
+
+    </div>
+    
+</form>
+
+@section Scripts {
+
+    <script>
+
+        $("#btnDelDocBy").click(x => {
+            let id = $("#docid").val();
+            var url_redirect = '@Url.Action("Doctors", "Admin")';
+            $.ajax({
+                url: "/Admin/DeleteDoctor/",
+                data: { delid: id },
+                type: "post",
+                dataType: "json",
+                success: function (func) {
+                    alert("Doctor Deleted");
+                    url_redirect = url_redirect.replace("00replace00");
+                    window.location.href = url_redirect;
+                }
+            });
+        });
+
+    </script>
+
+}

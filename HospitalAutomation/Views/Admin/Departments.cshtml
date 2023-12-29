@@ -5,114 +5,96 @@
     Layout = "~/Views/Shared/_AdminPanel.cshtml";
 }
 
-<button type="button" id="btnGetDepts" class="btn btn-outline-primary">Departments</button>
-<button type="button" id="btnGetDeptById" class="btn btn-outline-primary"> Get Department </button>
-<button type="button" id="btnAddDeptBy" class="btn btn-outline-primary"> Add Department </button>
-<br />
-<div id="deptsList"></div>
-<div id="deptListById"></div>
-<div ><input type="text" placeholder="List by Department ID" id="depid"/></div>
-<div >
-    <input type="text" placeholder="Add to Department Name" id="depname"/>
-</div>
 
+<div class="row">
+    <div class="col-md-4 col-sm-12">
+
+        <h6 class="text-center">DEPARTMENT PROCESS</h6><hr />
+        <input class="d-block col-12 mb-2" type="text" placeholder="Department ID" id="id" />
+        <input class="d-block col-12 mb-2" type="text" placeholder="Department Name" id="name" />
+        <textarea class="d-block col-12 mb-2" type="text" placeholder="Department About" id="about"></textarea>
+
+        <div class="row">
+            <button type="button" id="btnDelDeptBy" class="btn btn-outline-danger col"> Delete </button>
+            <button type="button" id="btnUpDeptBy" class="btn btn-outline-primary col"> Update </button>
+            <button type="button" id="btnAddDeptBy" class="btn btn-outline-success col"> Add </button>
+        </div>
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <h6 class="text-center">DEPARTMENTS</h6><hr />
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    About
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DepartmentID</td>
+                    <td>@item.DepartmentName</td>
+                    <td>@item.DepartmentAbout</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
 
 @section Scripts {
 
     <script>
-        $("#btnGetDepts").click(function () {
-            $.ajax({
-                contentType: "application/json",
-                dataType: "json",
-                type: "Get",
-                url: "/Admin/GetDepartments",
-                success: function (func) {
-                    let w = jQuery.parseJSON(func);
-                    console.log(w);
-                    let tableHtml = "<table class='table table-bordered'><tr><th>#</th><th>Name</th></tr>";
-                    $.each(w, (index, value) => {
-                        tableHtml += `<tr><td>${value.DepartmentID}</td><td>${value.DepartmentName}</td></tr>`;
-                    });
-                    tableHtml += "</table>";
-                    $("#deptsList").html(tableHtml);
-                }
-            });
-        });
-
-        $("#btnGetDeptById").click(x => {
-            let id = $("#depid").val();
-            $.ajax({
-                contentType:"application/json",
-                dataType:"json",
-                type:"get",
-                url: "/Admin/GetDepartmentById/",
-                data: {depid:id},
-                success: function (func) {
-                    let w = jQuery.parseJSON(func);
-                    console.log(w)
-                    let getDep = `<table class="table table-bordered"><tr><th>#</th><th>Department</th></tr><tr><td>${w.DepartmentID}</td><td>${w.DepartmentName}</td></tr></table>`
-                    $("#deptListById").html(getDep);
-                }
-            });
-            console.log(id);
-        });
-
         $("#btnAddDeptBy").click(function () {
             let department = {
-                DepartmentName: $("#depname").val()
+                DepartmentName: $("#name").val(),
+                DepartmentAbout: $("#about").val()
             };
             $.ajax({
                 type: "post",
                 url: "/Admin/AddDepartment/",
                 data: department,
                 success: function (func) {
-                    let result = jQuery.parseJSON(func);
                     alert("Department Added");
+                    window.location.reload(1);
+                }
+            });
+        });
+
+        $("#btnDelDeptBy").click(x => {
+            let id = $("#id").val();
+            $.ajax({
+                url: "/Admin/DeleteDepartment/",
+                data: { delid: id },
+                type: "post",
+                dataType: "json",
+                success: function (func) {
+                    alert("Department Deleted");
+                    window.location.reload(1);
+                }
+            });
+        });
+
+        $("#btnUpDeptBy").click(function () {
+            let dept = {
+                DepartmentID: $("#id").val(),
+                DepartmentName: $("#name").val(),
+                DepartmentAbout: $("#about").val()
+            };
+            $.ajax({
+                url: "/Admin/UpdateDepartment/",
+                data: dept,
+                type: "post",
+                success: function (func) {
+                    alert("Department Updated");
+                    window.location.reload(1);
                 }
             });
         });
     </script>
 
 }
-
-
-
-
-@*
-<table>
-    <tr>
-        <th>
-            #
-        </th>
-        <th>
-            Department
-        </th>
-        <th>
-            About
-        </th>
-        <th>
-            Edit
-        </th>
-        <th>
-            Delete
-        </th>
-    </tr>
-    @foreach(var item in Model)
-    {
-        <tr>
-            <td>@item.DepartmentID</td>
-        </tr>
-        <tr>
-            <td>@item.DepartmentName</td>
-        </tr>
-        <tr>
-            <td>@item.DepartmentAbout</td>
-        </tr>
-        <tr>
-            <td><input  class="form-control" /></td>
-        </tr>
-        <tr>
-            <td>@item.DepartmentAbout</td>
-        </tr>
-    }
-</table>*@
