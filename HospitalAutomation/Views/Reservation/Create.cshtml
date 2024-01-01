@@ -5,38 +5,73 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="col-lg-4 col-md-7 col-sm-11 mx-auto border border-primary px-2 py-5 bg-danger">
-    <h4 class="text-center text-white">New Reservation</h4>
+<div class="col-lg-4 col-md-7 col-sm-11 mx-auto px-2 py-5" style="background-image: linear-gradient( to bottom right, rgb(175, 5, 5), rgba(0, 55, 123, 0.93));">
+    <h4 class="text-center text-white">@_localization.Getkey("str_Reservation")</h4>
     <hr />
     <div class="row mx-auto justify-content-center text-white">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group mt-2">
-                <label asp-for="DepartmentID" class="control-label"></label>
+                <label class="control-label">@_localization.Getkey("str_Department")</label>
                 <select id="lstDept" asp-for="DepartmentID" class="form-control" asp-items="ViewBag.DepartmentID" onchange="FillDoctors(this,'lstDoct');"></select>
             </div>
             <div class="form-group mt-3">
-                <label asp-for="DoctorID" class="control-label"></label>
+                <label class="control-label">@_localization.Getkey("str_Doctor")</label>
                 <select id="lstDoct" asp-for="DoctorID" class="form-control" asp-items="ViewBag.DoctorID"></select>
             </div>
             <div class="form-group mt-3">
-                <label asp-for="ReservationDay" class="control-label"></label>
-                <input asp-for="ReservationDay" class="form-control" />
+                <label class="control-label">@_localization.Getkey("str_Day")</label>
+                <input id="resdate" type="date" value="@DateTime.Now"  asp-for="ReservationDay" class="form-control" />
                 <span asp-validation-for="ReservationDay" class="text-danger"></span>
             </div>
-            <!--<div class="form-group">
-                <label asp-for="PatientID" class="control-label"></label>
-                <select asp-for="PatientID" class ="form-control" asp-items="ViewBag.PatientID"></select>
-            </div>-->
-            <div class="form-group text-center mt-3">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group text-center my-3">
+                <input id="goship" type="button" value="@_localization.Getkey("str_GetTime")" class="btn btn-primary" />
             </div>
+            <div id="getShip" class="row"></div>
+            <input id="result" hidden type="text" asp-for="@Model.ReservationTime"/>
+            <div class="form-group text-center my-3">
+                <input id="createRes" style="display:none;" type='submit' value='@_localization.Getkey("str_TakeRes")' class="btn btn-outline-danger" />
+            </div>
+            
         </form>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        $("#goship").click(function () {
+            let doid = lstDoct.options[lstDoct.selectedIndex].value;
+            let rDay = $("#resdate").val();
+            console.log(doid);
+            $.ajax({
+                contentType: "application/json",
+                dataType: "json",
+                type: "Get",
+                url: "/Reservation/Reservation/",
+                data: { docid: doid, res: rDay },
+                success: function (func) {
+                    let w = jQuery.parseJSON(func);
+                    console.log(w);
+                    let tableHtml="";
+                    $.each(w, (index, value) => {
+                        tableHtml += "<div class='col m-2'><input type='radio' name='rate' value='" + value + "' />" + value+"</div>";
+                    });
+                    tableHtml += "<br /> <button type='button' onclick='displayRadioValue()'>Onayla / Accept</button>";
+                    $("#getShip").html(tableHtml);
+                }
+            });
+        });
+        function displayRadioValue() {
+            var ele = document.getElementsByName('rate');
+
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked) {
+                    document.getElementById("result").value =  ele[i].value;
+                    $("#createRes").fadeIn(1000);
+                }
+            }
+        }
+    </script>
 }

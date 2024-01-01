@@ -1,0 +1,34 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Home>
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container row mx-auto justify-content-center">
+
+        @foreach (var item in Model)
+        {
+            <div class="card m-3" style="width: 18rem;">
+                <img class="card-img-top" src="@item.Image" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    @if (item.Detail.Length > 50)
+                    {
+                        <p class="card-text">@item.Detail.Substring(0, item.Detail.Substring(0, 50).LastIndexOf(" "))...</p>
+                        <a href="/Home/GetDetail/@item.Id/" class="btn btn-primary">@_localization.Getkey("str_ReadMore")</a>
+                    }
+                    else{
+                        <p class="card-text">@item.Detail</p>                        
+                    }
+
+                </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">@item.CreationDate.ToShortDateString()</small>
+            </div>
+            </div>
+
+     
+            }
+   
+</div>

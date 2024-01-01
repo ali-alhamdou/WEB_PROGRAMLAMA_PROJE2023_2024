@@ -1,0 +1,20 @@
+﻿@model EntityLayer.Concrete.Patient
+@{
+    ViewData["Title"] = "MyProfile";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+
+<h4><strong>@_localization.Getkey("str_MyProfile")</strong></h4>
+<hr />
+<div class="bg-white py-4 border">
+    <div class="row">
+        <div class="text-end col border"><strong>@_localization.Getkey("str_NameSurname") : </strong></div>
+        <div class="col border">@Model.PatientName</div>
+    </div>
+    <div class="row">
+        <div class="text-end col border"><strong>E-Mail : </strong></div>
+        <div class="col border">@Model.Mail</div>
+    </div>
+</div>
+
+

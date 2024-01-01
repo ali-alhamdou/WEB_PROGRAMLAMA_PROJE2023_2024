@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.Home
+@{
+    ViewData["Title"] = "GetDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mx-auto col-lg-6 col-md-9 col-sm-11 bg-white px-3 py-3">
+    <table class="table table-bordered mx-auto justify-content-center">
+        <tr>
+            <td class="text-center">
+                <img src="@Model.Image" width="200px" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <strong>@Model.Title</strong>  -  @Model.CreationDate.ToShortDateString()
+            </td>
+        </tr>
+        <tr>
+            <td class="px-4">
+                <p>@Model.Detail</p>
+            </td>
+        </tr>
+    </table>
+</div>

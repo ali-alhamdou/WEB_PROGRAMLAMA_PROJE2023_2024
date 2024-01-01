@@ -17,7 +17,7 @@ namespace DataAccessLayer.EntityFramework
         {
             using (var _context = new Context())
             {
-                return _context.Reservations.Include(a => a.Department).Include(b => b.Doctor).ToList();
+                return _context.Reservations.Include(a => a.Department).Include(b => b.Doctor).Include(c => c.Patient).ToList();
             }
         }
     }

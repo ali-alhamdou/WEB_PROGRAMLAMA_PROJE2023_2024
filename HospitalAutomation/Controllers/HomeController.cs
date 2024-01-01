@@ -3,39 +3,50 @@ using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using HospitalAutomation.Models;
 using HospitalAutomation.Services;
+using HospitalAutomation.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 
 namespace HospitalAutomation.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private LanguageService _localization;
-        private readonly UserManager<AppUser> _userManager;
 
 
         DoctorManager _docMan = new DoctorManager(new EfDoctorRepository());
+        HomeManager _homeMan = new HomeManager(new EfHomeRepository());
+        AboutUsManager _aboutMan = new AboutUsManager(new EfAboutUsRepository());
 
-        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, LanguageService localization)
+        public HomeController(ILogger<HomeController> logger,  LanguageService localization)
         {
             _logger = logger;
-            _userManager = userManager;
             _localization = localization;
         }
-
-        public IActionResult Index()
+        public IActionResult Home()
         {
-            return View();
+            var values = _homeMan.GetList().OrderByDescending(x => x.CreationDate);
+            return View(values);
+        }
+        public IActionResult GetDetail(int id)
+        {
+            Home values = _homeMan.GetList().Where(x => x.Id == id).FirstOrDefault();
+
+            return View(values);
+        }
+        public IActionResult AboutUs()
+        {
+            var values = _aboutMan.GetList();
+            return View(values);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
         public IActionResult OurDoctors()
         {
             var values = _docMan.ListDoctorWithDepartment();

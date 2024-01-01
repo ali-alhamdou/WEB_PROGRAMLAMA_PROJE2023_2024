@@ -1,0 +1,71 @@
+﻿@model EntityLayer.Concrete.Home
+@{
+    ViewData["Title"] = "CheckDetail";
+    Layout = "~/Views/Shared/_AdminPanel.cshtml";
+}
+
+
+<form method="post" enctype="multipart/form-data">
+    <input id="" asp-for="@Model.Image" hidden />
+    <input id="detailid" asp-for="@Model.Id" hidden />
+    <div class="row">
+        <div class="mx-auto bg-secondary px-3 py-5">
+            <table class="table table-bordered mx-auto justify-content-center bg-white">
+                <tr>
+                    <th class="px-4">
+                        <img src="@Model.Image" width="50px" alt="">
+                    </th>
+                    <td class="text-center">
+                        <input  value="@Model.Image" type="file" name="file" class="form-control col-3" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_Title")
+                    </th>
+                    <td class="px-4">
+                        <input id="docname" asp-for="@Model.Title" value="@Model.Title" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_Detail")
+                    </th>
+                    <td class="px-4">
+                        <textarea class="col-12 d-block" asp-for="@Model.Detail" value="" rows="7">@Model.Detail</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="row">
+                <button type="button" id="btnDel" class="btn btn-outline-danger col"> @_localization.Getkey("str_Delete") </button>
+                <button type="submit" class="btn btn-outline-primary col"> @_localization.Getkey("str_Update") </button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+@section Scripts {
+
+    <script>
+
+        $("#btnDel").click(x => {
+            let id = $("#detailid").val();
+            var url_redirect = '@Url.Action("Home", "Admin")';
+            $.ajax({
+                url: "/Admin/DeleteDetail/",
+                data: { delid: id },
+                type: "post",
+                dataType: "json",
+                success: function (func) {
+                    alert("Detail Deleted");
+                    url_redirect = url_redirect.replace("00replace00");
+                    window.location.href = url_redirect;
+                }
+            });
+        });
+
+    </script>
+
+}

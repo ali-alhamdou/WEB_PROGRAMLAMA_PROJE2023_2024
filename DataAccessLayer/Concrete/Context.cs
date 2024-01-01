@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context:IdentityDbContext<AppUser,AppRole,int>
+    public class Context: IdentityDbContext<ApplicationUser>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=HospitalAutomation; integrated security=True; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("server=DESKTOP-2QM0QOC;database=HospitalAutomationDB; integrated security=True; TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,6 +25,9 @@ namespace DataAccessLayer.Concrete
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Ship> Ships { get; set; }
+        public DbSet<Home> Homes { get; set; }
+        public DbSet<AboutUs> AboutUss { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
 
     }
 }

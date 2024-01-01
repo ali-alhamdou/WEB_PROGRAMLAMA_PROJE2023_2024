@@ -24,7 +24,7 @@ namespace DataAccessLayer.EntityFramework
         {
             using (var _context = new Context())
             {
-                return _context.Doctors.Include(b => b.Department).ToList();
+                return _context.Doctors.Include(b => b.Department).Include(a=>a.Ship).ToList();
             }
         }
     }

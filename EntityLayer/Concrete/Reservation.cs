@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace EntityLayer.Concrete
         [Key]
         public int ReservationID { get; set; }
         public DateTime ReservationDay { get; set; }
+        public TimeSpan ReservationTime { get; set; }
+        [DefaultValue(true)]
+        public bool? ReservationStatus { get; set; }
         public int DoctorID { get; set; }
         public Doctor Doctor { get; set; }
         public int PatientID { get; set; }

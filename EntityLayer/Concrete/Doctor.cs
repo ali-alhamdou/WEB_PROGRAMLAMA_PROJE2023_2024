@@ -17,6 +17,8 @@ namespace EntityLayer.Concrete
         public string Image { get; set; }
         public string Mail { get; set; }
         public string UserName { get; set; }
+        public int? ShipID { get; set; }
+        public Ship Ship { get; set; }
         public int? DepartmentID { get; set; }
         public Department Department { get; set; }
         public List<Reservation> Reservations { get; set; }

@@ -1,0 +1,32 @@
+﻿@model EntityLayer.Concrete.Gallery
+@{
+    ViewData["Title"] = "EditData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mx-auto row bg-light py-4">
+    <div class="col-md-4 mx-auto">
+        <h4><strong>@_localization.Getkey("str_Gallery") - @_localization.Getkey("str_GalleryEdit")</strong></h4>
+        <hr />
+        <form asp-action="EditData" enctype="multipart/form-data">
+            <input id="" asp-for="@Model.PhotoImage" hidden />
+            <input id="" asp-for="@Model.PhotoId" hidden />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group py-2">
+                <img src="@Model.PhotoImage" width="75px" />
+                <input   type="file" name="file" class="form-control"  />
+                <span asp-validation-for="PhotoImage" class="text-danger"></span>
+            </div>
+            <div class="form-group py-2">
+                <label class="control-label">@_localization.Getkey("str_PhotoName")</label>
+                <input asp-for="@Model.PhotoName" class="form-control" value="@Model.PhotoName" />
+                <span asp-validation-for="PhotoName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="@_localization.Getkey("str_Update")" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

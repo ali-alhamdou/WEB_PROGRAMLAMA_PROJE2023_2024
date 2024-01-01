@@ -7,31 +7,31 @@
 
 
 <div class="row">
-    <div class="col-md-4 col-sm-12">
+    <div class="col-md-4 col-sm-12 p-1 bg-light">
 
-        <h6 class="text-center">DEPARTMENT PROCESS</h6><hr />
-        <input class="d-block col-12 mb-2" type="text" placeholder="Department ID" id="id" />
-        <input class="d-block col-12 mb-2" type="text" placeholder="Department Name" id="name" />
-        <textarea class="d-block col-12 mb-2" type="text" placeholder="Department About" id="about"></textarea>
+        <h4 class="text-center"><strong>@_localization.Getkey("str_DepartmentOp")</strong></h4><hr />
+        <input class="d-block col-12 mb-2" type="text" placeholder="@_localization.Getkey("str_Department") ID" id="id" />
+        <input class="d-block col-12 mb-2" type="text" placeholder="@_localization.Getkey("str_Department") @_localization.Getkey("str_Name")" id="name" />
+        <textarea class="d-block col-12 mb-2" type="text" placeholder="@_localization.Getkey("str_Department") @_localization.Getkey("str_AboutTh")" id="about"></textarea>
 
-        <div class="row">
-            <button type="button" id="btnDelDeptBy" class="btn btn-outline-danger col"> Delete </button>
-            <button type="button" id="btnUpDeptBy" class="btn btn-outline-primary col"> Update </button>
-            <button type="button" id="btnAddDeptBy" class="btn btn-outline-success col"> Add </button>
+        <div class="text-center">
+            <button type="button" id="btnDelDeptBy" class="btn btn-outline-danger px-3 "><strong>@_localization.Getkey("str_Delete")</strong>  </button>
+            <button type="button" id="btnUpDeptBy" class="btn btn-outline-primary px-3 "><strong>@_localization.Getkey("str_Update")</strong>  </button>
+            <button type="button" id="btnAddDeptBy" class="btn btn-outline-success px-3 "><strong>@_localization.Getkey("str_Add")</strong>  </button>
         </div>
     </div>
     <div class="col-md-8 col-sm-12">
-        <h6 class="text-center">DEPARTMENTS</h6><hr />
+        <h4 class="text-center"><strong>@_localization.Getkey("str_Departments")</strong></h4><hr />
         <table class="table table-bordered">
             <tr>
                 <th>
                     #
                 </th>
                 <th>
-                    Name
+                    @_localization.Getkey("str_Name")
                 </th>
                 <th>
-                    About
+                    @_localization.Getkey("str_AboutTh")
                 </th>
             </tr>
             @foreach (var item in Model)

@@ -11,35 +11,36 @@ namespace BusinessLayer.Concrete
 {
     public class UserManager : IUserService
     {
-        IUserDal _userDal;
+        IUserDal _dal;
 
-        public UserManager(IUserDal userDal)
+        public UserManager(IUserDal dal)
         {
-            _userDal = userDal;
-        }
-        public AppUser GetById(int id)
-        {
-            return _userDal.GetByID(id);
+            _dal = dal;
         }
 
-        public List<AppUser> GetList()
+        public ApplicationUser GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dal.GetByID(id);
         }
 
-        public void TAdd(AppUser t)
+        public List<ApplicationUser> GetList()
         {
-            throw new NotImplementedException();
+            return _dal.GetList();
         }
 
-        public void TDelete(AppUser t)
+        public void TAdd(ApplicationUser t)
         {
-            throw new NotImplementedException();
+            _dal.Insert(t);
         }
 
-        public void TUpdate(AppUser t)
+        public void TDelete(ApplicationUser t)
         {
-            _userDal.Update(t);
+            _dal.Delete(t);
+        }
+
+        public void TUpdate(ApplicationUser t)
+        {
+            _dal.Update(t);
         }
     }
 }

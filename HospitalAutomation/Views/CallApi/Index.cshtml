@@ -1,0 +1,43 @@
+﻿@using EntityLayer.Concrete
+@model List<Gallery>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 class="d-inline"><strong>@_localization.Getkey("str_Gallery")</strong></h4>
+        </div>
+        @if (User.IsInRole(UserRoles.Role_Admin))
+        {
+            <div class="col text-end">
+                <a href="/CallApi/AddData" class="btn btn-outline-success"><strong>@_localization.Getkey("str_Add") </strong></a>
+        </div>
+        }
+    </div>
+    <hr />
+
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-2 m-1 py-2 px-3 border border-dark text-center bg-white">
+                <img src="@item.PhotoImage" width="75px" />
+                <hr />
+                <strong>@item.PhotoName</strong><hr />
+                @if (User.IsInRole(UserRoles.Role_Admin))
+                {
+                    <a href="/CallApi/EditData/@item.PhotoId" class="btn btn-outline-primary"><strong>@_localization.Getkey("str_Update")</strong></a>
+                    <a href="/CallApi/DeleteData/@item.PhotoId" class="btn btn-outline-danger"><strong>@_localization.Getkey("str_Delete")</strong></a>
+                }
+            </div>
+
+        }
+    </div>
+</div>
+

@@ -1,17 +1,22 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-.menu{
-    background-color:#d9efff;
-    font-weight:600;
-    margin-bottom:20px;
-}
-body, main{
-    border:none;
+.menu {
+    background: rgba(0, 55, 123, 0.93);
+    font-weight: 600;
 }
 .menu li:not(:last-child){
     border-right:1px solid #d4cece;
+}
+.panel {
+    background-color: #d4dbe6;
 }
 .hospital-logo {
     font-weight: bolder;
     color: black;
     font-family: 'Bree Serif', serif;
+}
+.btnOnlineRes {
+    font-family: 'PT Serif', serif;
+}
+a{
+    text-decoration:none;
 }

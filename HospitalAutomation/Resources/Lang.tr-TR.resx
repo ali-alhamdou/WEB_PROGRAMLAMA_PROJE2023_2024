@@ -120,14 +120,56 @@
   <data name="str_About" xml:space="preserve">
     <value>Hakkımızda</value>
   </data>
+  <data name="str_AboutTh" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="str_Active" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="str_Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
   <data name="str_AdminPanel" xml:space="preserve">
     <value>Admin Panel</value>
   </data>
-  <data name="str_Contact" xml:space="preserve">
-    <value>İletişim</value>
+  <data name="str_All" xml:space="preserve">
+    <value>Tümü</value>
+  </data>
+  <data name="str_BreakEnd" xml:space="preserve">
+    <value>Mola Bitişi</value>
+  </data>
+  <data name="str_BreakStart" xml:space="preserve">
+    <value>Mola Başlangıcı</value>
+  </data>
+  <data name="str_Cancel" xml:space="preserve">
+    <value>İptal et</value>
+  </data>
+  <data name="str_Cancelled" xml:space="preserve">
+    <value>İptal Edildi</value>
+  </data>
+  <data name="str_ChooseShip" xml:space="preserve">
+    <value>Mesai Saati</value>
+  </data>
+  <data name="str_Day" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="str_Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="str_Department" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="str_DepartmentOp" xml:space="preserve">
+    <value>Departman İşlemleri</value>
   </data>
   <data name="str_Departments" xml:space="preserve">
     <value>Departmanlar</value>
+  </data>
+  <data name="str_Detail" xml:space="preserve">
+    <value>İçerik</value>
+  </data>
+  <data name="str_Doctor" xml:space="preserve">
+    <value>Doktor</value>
   </data>
   <data name="str_DoctorPanel" xml:space="preserve">
     <value>Doktor Panel</value>
@@ -135,8 +177,26 @@
   <data name="str_Doctors" xml:space="preserve">
     <value>Doktorlarımız</value>
   </data>
+  <data name="str_EditAboutUs" xml:space="preserve">
+    <value>Hakkımızdayı Düzenle</value>
+  </data>
+  <data name="str_EditHome" xml:space="preserve">
+    <value>Anasayfayı Düzenle</value>
+  </data>
+  <data name="str_Gallery" xml:space="preserve">
+    <value>Galeri</value>
+  </data>
+  <data name="str_GalleryEdit" xml:space="preserve">
+    <value>Fotoğraf Güncelleme</value>
+  </data>
+  <data name="str_GetTime" xml:space="preserve">
+    <value>Saatleri Göster</value>
+  </data>
   <data name="str_GotoSite" xml:space="preserve">
     <value>Siteye git</value>
+  </data>
+  <data name="str_Hello" xml:space="preserve">
+    <value>Merhaba</value>
   </data>
   <data name="str_Home" xml:space="preserve">
     <value>Anasayfa</value>
@@ -144,20 +204,59 @@
   <data name="str_Hospital" xml:space="preserve">
     <value>Hastanesi</value>
   </data>
+  <data name="str_Image" xml:space="preserve">
+    <value>Fotoğraf</value>
+  </data>
   <data name="str_Login" xml:space="preserve">
     <value>Giriş yap</value>
+  </data>
+  <data name="str_LoginMessage" xml:space="preserve">
+    <value>Giriş yapmak için yerel bir hesap kullan.</value>
+  </data>
+  <data name="str_Logout" xml:space="preserve">
+    <value>Çıkış yap</value>
+  </data>
+  <data name="str_LogoutMessage" xml:space="preserve">
+    <value>Uygulamadan başarıyla çıkış yaptın.</value>
   </data>
   <data name="str_MyProfile" xml:space="preserve">
     <value>Profilim</value>
   </data>
-  <data name="str_PatientPanel" xml:space="preserve">
-    <value>Hasta Panel</value>
+  <data name="str_MyReservation" xml:space="preserve">
+    <value>Randevularım</value>
+  </data>
+  <data name="str_Name" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="str_NameSurname" xml:space="preserve">
+    <value>Ad - Soyad</value>
+  </data>
+  <data name="str_NewData" xml:space="preserve">
+    <value>Yeni Veri</value>
+  </data>
+  <data name="str_Passed" xml:space="preserve">
+    <value>Geçmiş</value>
+  </data>
+  <data name="str_Patient" xml:space="preserve">
+    <value>Hasta</value>
   </data>
   <data name="str_Patients" xml:space="preserve">
     <value>Hastalar</value>
   </data>
+  <data name="str_Photo" xml:space="preserve">
+    <value>Fotoğraf</value>
+  </data>
+  <data name="str_PhotoName" xml:space="preserve">
+    <value>Fotoğraf Adı</value>
+  </data>
+  <data name="str_ReadMore" xml:space="preserve">
+    <value>Devamını oku</value>
+  </data>
   <data name="str_Register" xml:space="preserve">
     <value>Kayıt ol</value>
+  </data>
+  <data name="str_RegisterMessage" xml:space="preserve">
+    <value>Yeni bir hesap oluştur.</value>
   </data>
   <data name="str_Reservation" xml:space="preserve">
     <value>Online Randevu</value>
@@ -165,7 +264,40 @@
   <data name="str_Reservations" xml:space="preserve">
     <value>Randevular</value>
   </data>
+  <data name="str_SeeMore" xml:space="preserve">
+    <value>Daha fazlası</value>
+  </data>
+  <data name="str_Ship" xml:space="preserve">
+    <value>Vardiya</value>
+  </data>
+  <data name="str_ShipEnd" xml:space="preserve">
+    <value>Vardiya Bitişi</value>
+  </data>
+  <data name="str_ShipId" xml:space="preserve">
+    <value>Vardiya ID</value>
+  </data>
+  <data name="str_ShipName" xml:space="preserve">
+    <value>Vardiya İsmi</value>
+  </data>
   <data name="str_Ships" xml:space="preserve">
-    <value>Çalışma Saatleri</value>
+    <value>Mesai Saatleri</value>
+  </data>
+  <data name="str_ShipStart" xml:space="preserve">
+    <value>Vardiya Başlangıcı</value>
+  </data>
+  <data name="str_TakeRes" xml:space="preserve">
+    <value>Randevu Al</value>
+  </data>
+  <data name="str_Time" xml:space="preserve">
+    <value>Saat</value>
+  </data>
+  <data name="str_Title" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="str_Today" xml:space="preserve">
+    <value>Bugün</value>
+  </data>
+  <data name="str_Update" xml:space="preserve">
+    <value>Güncelle</value>
   </data>
 </root>

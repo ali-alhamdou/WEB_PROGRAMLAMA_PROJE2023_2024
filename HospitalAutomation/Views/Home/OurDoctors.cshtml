@@ -7,37 +7,21 @@
     <div class="row justify-content-center">
         @foreach (var item in Model)
         {
-            <div class="col-lg-3 col-md-5 border border-primary m-1 py-2 px-4">
-                <div class="text-center">
-                    <img src="@item.Image" width="200px" alt="">
-                </div>
-                <div class="">
-                    <table class="table table-bordered">
-                        <tr>
-                            <td class="text-start">
-                                <strong>@item.DoctorName</strong>
-                            </td>
-                            <td class="text-end">
-                                <i>@item.Department.DepartmentName</i>
-                            </td>
-                        </tr>
-                    </table>
-                    @if (item.DoctorAbout.Length > 130)
+            
+            <div class="card m-3" style="width: 18rem;">
+                <img class="card-img-top" src="@item.Image" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.DoctorName - <i>@item.Department.DepartmentName</i></h5>
+                    @if (item.DoctorAbout.Length > 75)
                     {
-                        <p class="card-text mb-3">
-                            @item.DoctorAbout.Substring(0, item.DoctorAbout.Substring(0, 130).LastIndexOf(" "))...
-                        </p>
+                        <p class="card-text">@item.DoctorAbout.Substring(0, item.DoctorAbout.Substring(0, 75).LastIndexOf(" "))...</p>
+                        <a href="/Home/GetDoctor/@item.DoctorID/" class="btn btn-primary">@_localization.Getkey("str_ReadMore")</a>
                     }
                     else
                     {
-                        <p class="card-text mb-3">
-                            @item.DoctorAbout
-                        </p>
+                        <p class="card-text">@item.DoctorAbout</p>
                     }
-                    @if (item.DoctorAbout.Length > 130)
-                    {
-                        <a href="/Home/GetDoctor/@item.DoctorID/" class="btn btn-success read-m">Devamını oku</a>
-                    }
+
                 </div>
             </div>
         }

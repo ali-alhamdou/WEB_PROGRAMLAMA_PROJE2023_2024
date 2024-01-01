@@ -5,49 +5,59 @@
     Layout = "~/Views/Shared/_AdminPanel.cshtml";
 }
 <div class="row">
-    <input id="delid" placeholder="Ship Id" />
-    <button type="button" id="btnDelShipBy" class="btn btn-outline-danger col"> Delete </button>
+    <input id="delid" placeholder="@_localization.Getkey("str_ShipId")" />
+    <button type="button" id="btnDelShipBy" class="btn btn-outline-danger col"> @_localization.Getkey("str_Delete") </button>
 </div>
 <div class="row justify-content-center">
-    <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-2 px-3 border border-dark text-center">
-        <label>  Ship Name :</label>
-        <input id ="nameAdd" type="text" placeholder="Ship Name" />
+    <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-3 px-3  bg-success text-center">
+        <input id="nameAdd" type="text" placeholder="@_localization.Getkey("str_ShipName")" />
         <hr />
-        <label> Ship Start :</label>
-        <input id="shipstartAdd" type="time" placeholder="Ship Start" />
-        <br />
-        <label>   Ship End :</label>
-        <input id="shipendAdd" type="time" placeholder="Ship End" />
-        <br />
-        <label>Break Start :</label>
-        <input id="breakstartAdd" type="time" placeholder="Break Start" />
-        <br />
-        <label>  Break End :</label>
-        <input id="breakendAdd" type="time" placeholder="Break End" />
-        <br />
-        <button type="button" id="btnAddShipBy" class="btn btn-outline-success col"> Add </button>
+        <div class="row border border-light m-0 py-2">
+            <div class="col text-white  align-self-center m-0">  <strong><label> @_localization.Getkey("str_ShipStart") </label></strong></div>
+            <div class="col align-self-center m-0"><input id="shipstartAdd" type="time" placeholder="@_localization.Getkey("str_ShipStart")" /></div>
+        </div>
+        <div class="row border border-light m-0 py-2">
+            <div class="col text-white  align-self-center m-0">  <strong><label>   @_localization.Getkey("str_ShipEnd")</label></strong></div>
+            <div class="col align-self-center m-0"><input id="shipendAdd" type="time" placeholder="@_localization.Getkey("str_ShipEnd")" /></div>
+        </div>
+        <div class="row border border-light m-0 py-2">
+            <div class="col text-white  align-self-center m-0">  <strong><label>@_localization.Getkey("str_BreakStart")</label></strong></div>
+            <div class="col align-self-center m-0"><input id="breakstartAdd" type="time" placeholder="@_localization.Getkey("str_BreakStart")" /></div>
+        </div>
+        <div class="row border border-light m-0 py-2">
+            <div class="col text-white  align-self-center m-0">  <strong><label>  @_localization.Getkey("str_BreakEnd")</label></strong></div>
+            <div class="col align-self-center m-0"><input id="breakendAdd" type="time" placeholder="@_localization.Getkey("str_BreakEnd")" /></div>
+        </div>
+        <button type="button" id="btnAddShipBy" class="btn bg-light text-success col my-1"> <strong>@_localization.Getkey("str_Add") </strong></button>
     </div>
     @foreach (var item in Model)
     {
 
-        <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-2 px-3 border border-dark text-center">
-            <label>  Ship ID :</label>
-            <label>@item.ShipID</label>
-            <br />
-            <label>  Ship Name :</label>
-            <input type="text" value="@item.ShipName" />
+        <div class="col-lg-3 col-md-5 col-sm-12 m-1 py-3 px-3 bg-light border border-dark text-center">
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark text-end  align-self-center m-0">  <strong><label>  @_localization.Getkey("str_ShipId") :</label></strong></div>
+                <div class="col align-self-center m-0"><label>@item.ShipID</label></div>
+            </div>
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark  align-self-center m-0">  <strong><label>@item.ShipName</label></strong></div>
+            </div>
             <hr />
-            <label> Ship Start :</label>
-            <input type="time" value="@item.ShipStart" />
-            <br />
-            <label>   Ship End :</label>
-            <input type="time" value="@item.ShipEnd" />
-            <br />
-            <label>Break Start :</label>
-            <input type="time" value="@item.BreakStart" />
-            <br />
-            <label>  Break End :</label>
-            <input type="time" value="@item.BreakEnd" />
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark  align-self-center m-0">  <strong><label> @_localization.Getkey("str_ShipStart")</label></strong></div>
+                <div class="col align-self-center m-0"><label>@item.ShipStart</label></div>
+            </div>
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark  align-self-center m-0">  <strong><label> @_localization.Getkey("str_ShipEnd")</label></strong></div>
+                <div class="col align-self-center m-0"><label>@item.ShipEnd</label></div>
+            </div>
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark  align-self-center m-0">  <strong><label> @_localization.Getkey("str_BreakStart")</label></strong></div>
+                <div class="col align-self-center m-0"><label>@item.BreakStart</label></div>
+            </div>
+            <div class="row border border-dark m-0 py-2">
+                <div class="col text-dark  align-self-center m-0">  <strong><label> @_localization.Getkey("str_BreakEnd")</label></strong></div>
+                <div class="col align-self-center m-0"><label>@item.BreakEnd</label></div>
+            </div>
         </div>
 
     }
@@ -59,7 +69,7 @@
             let shhip = {
                 ShipName: $("#nameAdd").val(),
                 ShipStart: $("#shipstartAdd").val(),
-                ShipEnd: $("#shipendtAdd").val(),
+                ShipEnd: $("#shipendAdd").val(),
                 BreakStart: $("#breakstartAdd").val(),
                 BreakEnd: $("#breakendAdd").val()
             };

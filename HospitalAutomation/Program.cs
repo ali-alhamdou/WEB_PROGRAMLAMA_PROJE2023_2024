@@ -1,22 +1,35 @@
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using HospitalAutomation.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using HospitalAutomation.Utility;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//builder.Services.AddDbContext<Context>(options =>
+//options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<Context>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+            .AddEntityFrameworkStores<Context>()
+            .AddDefaultTokenProviders();
+//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+//.AddEntityFrameworkStores<Context>().AddDefaultTokenProviders();
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireUppercase = false;
+});
+builder.Services.AddRazorPages();
+//email
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add Identity
-builder.Services.AddDbContext<Context>();
-builder.Services.AddIdentity<AppUser, AppRole>(x => {
-    x.Password.RequireUppercase = false;
-    x.Password.RequireNonAlphanumeric = false;
-}).AddEntityFrameworkStores<Context>();
 
 #region Localization
 builder.Services.AddSingleton<LanguageService>();
@@ -60,7 +73,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
+app.MapRazorPages();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -70,6 +83,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Home}/{id?}");
 
 app.Run();

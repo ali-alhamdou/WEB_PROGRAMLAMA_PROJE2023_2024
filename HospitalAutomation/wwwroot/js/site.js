@@ -6,7 +6,6 @@
 function FillDoctors(lstDepartmentCtrl, lstDoct) {
     var lstDoctors = $("#" + lstDoct);
     lstDoctors.empty();
-
     var selectedDepartment = lstDepartmentCtrl.options[lstDepartmentCtrl.selectedIndex].value;
 
     if (selectedDepartment != null && selectedDepartment != '') {

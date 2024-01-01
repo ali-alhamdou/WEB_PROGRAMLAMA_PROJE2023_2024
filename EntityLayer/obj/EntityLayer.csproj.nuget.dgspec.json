@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\AL MANARA\\Desktop\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\AL MANARA\\Desktop\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AL MANARA\\Desktop\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\AL MANARA\\Desktop\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\AL MANARA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL MANARA\\OneDrive\\Documents\\my college\\HospitalAutomation-9\\HospitalAutomation\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\AL MANARA\\Desktop\\HospitalAutomation\\HospitalAutomation\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL MANARA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.24, )"
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.23, )"
             }
           },
           "imports": [

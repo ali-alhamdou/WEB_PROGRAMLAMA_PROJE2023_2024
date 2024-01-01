@@ -32,20 +32,37 @@ C:\Users\me_ct\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\D
 C:\Users\me_ct\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
 C:\Users\me_ct\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
 C:\Users\me_ct\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
-C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\me_ct\Desktop\paydos\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

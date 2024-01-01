@@ -1,0 +1,21 @@
+Rapor dosyası HospitalAutomation proje dosyasındaki documents'in içerisindedir.
+
+veritabanı dosyası HospitalAutomation proje dosyasındaki documents'in içerisindedir.
+
+Hesaplar
+		Giriş Bilgisi - Mail			Şifre
+
+Admin  : 	ali.alhamdou@ogr.sakarya.edu.tr		Gg201210571.
+
+Doctor : 	doctor1@mail.com			123456789Gg.
+Doctor : 	doctor2@mail.com			123456789Gg.
+Doctor : 	doctor3@mail.com			123456789Gg.
+Doctor : 	doctor4@mail.com			123456789Gg.
+Doctor : 	doctor5@mail.com			123456789Gg.
+Doctor : 	doctor6@mail.com			123456789Gg.
+Patient:	patient1@gmail.com			123456789Gg.
+Patient:	patient2@gmail.com			123456789Gg.
+Patient:	patient3@gmail.com			123456789Gg.
+Patient:	patient4@gmail.com			123456789Gg.
+Patient:	patient5@gmail.com			123456789Gg.
+Patient:	patient6@gmail.com			123456789Gg.

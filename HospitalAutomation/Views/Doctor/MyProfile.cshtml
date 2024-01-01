@@ -1,0 +1,80 @@
+﻿@model EntityLayer.Concrete.Doctor
+@{
+    ViewData["Title"] = "MyProfile";
+    Layout = "~/Views/Shared/_DoctorPanel.cshtml";
+}
+
+<h4><strong>@_localization.Getkey("str_MyProfile")</strong></h4>
+<hr />
+<form method="post" enctype="multipart/form-data">
+    <input id="" asp-for="@Model.Image" hidden />
+    <input id="docid" asp-for="@Model.DoctorID" hidden />
+    <div class="row">
+        <div class="mx-auto px-3">
+            <table class="table table-bordered border-secondary mx-auto justify-content-center">
+                <tr>
+                    <th class="px-4">
+                        <img src="@Model.Image" width="100px" alt="">
+                    </th>
+                    <td class="text-center">
+                        <input id="docimage" value="@Model.Image" type="file" name="file" class="form-control col-3" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_NameSurname")
+                    </th>
+                    <td class="px-4">
+                        <input disabled id="" asp-for="@Model.DoctorName" value="@Model.DoctorName" />
+                        <input hidden id="docname" asp-for="@Model.DoctorName" value="@Model.DoctorName" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_ChooseShip")
+                    </th>
+                    <td class="px-4">
+                        <select id="docshipid" asp-for="ShipID" class="form-control" asp-items="ViewBag.Ships"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_Department")
+                    </th>
+                    <td class="px-4">
+                        @Model.Department.DepartmentName
+                        <select hidden id="docdepartmentid" asp-for="DepartmentID" class="form-control" asp-items="ViewBag.Depts"></select>
+                    </td>
+                </tr>
+                <input hidden id="docusername" asp-for="@Model.UserName" value="@Model.UserName" />
+                <tr>
+                    <th class="px-4">
+                        E-Mail
+                    </th>
+                    <td class="px-4">
+                        <input hidden id="docmail" asp-for="@Model.Mail" value="@Model.Mail" />@Model.Mail
+                    </td>
+                </tr>
+                <tr>
+                    <th class="px-4">
+                        @_localization.Getkey("str_AboutTh")
+                    </th>
+                    <td class="px-4">
+                        <textarea class="col-12 d-block" asp-for="@Model.DoctorAbout" id="docabout" value="" rows="7">@Model.DoctorAbout</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="row">
+                <button type="submit" id="btnUpDeptBy" class="btn btn-outline-primary col"> <b>@_localization.Getkey("str_Update")</b> </button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+@section Scripts {
+
+
+}

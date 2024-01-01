@@ -8,121 +8,169 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalAutomation
 build_property.RootNamespace = HospitalAutomation
-build_property.ProjectDir = C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\HospitalAutomation\
+build_property.ProjectDir = C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\HospitalAutomation\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\AL MANARA\OneDrive\Documents\my college\HospitalAutomation-9\HospitalAutomation\HospitalAutomation
+build_property.MSBuildProjectDirectory = C:\Users\AL MANARA\Desktop\HospitalAutomation\HospitalAutomation\HospitalAutomation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Departments.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxEZXBhcnRtZW50cy5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/DoctorEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxEb2N0b3JFZGl0LmNzaHRtbA==
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Doctors.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxEb2N0b3JzLmNzaHRtbA==
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxJbmRleC5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Patients.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxQYXRpZW50cy5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/_IdentityLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX0lkZW50aXR5TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Reservations.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxSZXNlcnZhdGlvbnMuY3NodG1s
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/AdminPanel/Ships.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxTaGlwcy5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Admin/Departments.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/AddDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkRG9jdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/CheckDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlY2tEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/CheckDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlY2tEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Departments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVwYXJ0bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Doctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9jdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/API/AddEmployee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVBJXEFkZEVtcGxveWVlLmNzaHRtbA==
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/API/EditEmployee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVBJXEVkaXRFbXBsb3llZS5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/MyProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTXlQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/API/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVBJXEluZGV4LmNzaHRtbA==
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/NewData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmV3RGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Home/GetDoctor.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Patients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF0aWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Reservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVzZXJ2YXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Admin/Ships.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hpcHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/CallApi/AddData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbEFwaVxBZGREYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/CallApi/EditData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbEFwaVxFZGl0RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/CallApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbEFwaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Doctor/MyProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXE15UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Doctor/Reservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFJlc2VydmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Home/GetDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXREZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Home/GetDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXREb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Home/OurDoctors.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Home/OurDoctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPdXJEb2N0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Reservation/Create.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Reservation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Reservation/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Reservation/MyReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cTXlSZXNlcnZhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/Components/DepartmentList/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGVwYXJ0bWVudExpc3RcRGVmYXVsdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/Components/DoctorList/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRG9jdG9yTGlzdFxEZWZhdWx0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/Error.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/_AdminPanel.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/_AdminPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pblBhbmVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/_DoctorPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2N0b3JQYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/SignIn/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbkluXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/SignUp/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/_ViewImports.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/_ViewStart.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL MANARA/OneDrive/Documents/my college/HospitalAutomation-9/HospitalAutomation/HospitalAutomation/Views/Shared/_Layout.cshtml]
+[C:/Users/AL MANARA/Desktop/HospitalAutomation/HospitalAutomation/HospitalAutomation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7bnyrlpt60

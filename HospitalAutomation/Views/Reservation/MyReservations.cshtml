@@ -1,0 +1,111 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Reservation>
+@{
+    ViewData["Title"] = "MyReservations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container bg-light py-4 px-3">
+    <h1 class="text-center">@_localization.Getkey("str_MyReservation")</h1>
+    <hr />
+    <a href="/Reservation/MyReservations/0" class="btn bg-primary text-white py-2 px-4">@_localization.Getkey("str_All")</a>
+    <a href="/Reservation/MyReservations/2" class="btn bg-warning text-white py-2 px-4">@_localization.Getkey("str_Today")</a>
+    <a href="/Reservation/MyReservations/1" class="btn bg-success text-white py-2 px-4">@_localization.Getkey("str_Active")</a>
+    <a href="/Reservation/MyReservations/3" class="btn bg-danger text-white py-2 px-4">@_localization.Getkey("str_Cancelled")</a>
+    <a href="/Reservation/MyReservations/4" class="btn bg-secondary text-white py-2 px-4">@_localization.Getkey("str_Passed")</a>
+    <hr />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    @_localization.Getkey("str_Day")
+                </th>
+                <th>
+                    @_localization.Getkey("str_Time")
+                </th>
+                <th>
+                    @_localization.Getkey("str_Department")
+                </th>
+                <th>
+                    @_localization.Getkey("str_Doctor")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="resList">
+            @foreach (var item in Model)
+            {
+                <input id="id" hidden value="@item.ReservationID" />
+                <tr>
+                    <td>
+                        @item.ReservationDay.ToShortDateString()
+                    </td>
+                    <td>
+                        @item.ReservationTime.ToString(@"hh\:mm")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department.DepartmentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Doctor.DoctorName)
+                    </td>
+                    @if (item.ReservationStatus != false)
+                    {
+                        if (item.ReservationDay.Date > DateTime.Now.Date)
+                        {
+                            <td>
+                                <button class="btn px-4 bg-danger text-white " id="btnDeclineRes">@_localization.Getkey("str_Cancel")</button>
+                            </td>
+                        }
+                        else if (item.ReservationDay.Date == DateTime.Now.Date)
+                        {
+                            if (item.ReservationTime > DateTime.Now.TimeOfDay)
+                            {
+                                <td>
+                                    <button class="btn px-4 bg-danger text-white " id="btnDeclineRes">@_localization.Getkey("str_Cancel")</button>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    @_localization.Getkey("str_Passed")
+                                </td>
+                            }
+
+                        }
+                        else
+                        {
+                            <td>
+                                @_localization.Getkey("str_Passed")
+                            </td>
+                        }
+                    }
+                    else
+                    {
+                        <td>
+                            @_localization.Getkey("str_Cancelled")
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section Scripts
+{
+    <script>
+        $("#btnDeclineRes").click(x => {
+            let id = $("#id").val();
+            $.ajax({
+                url: "/Reservation/DeclineReservation/",
+                data: { id: id },
+                type: "post",
+                dataType: "json",
+                success: function (func) {
+                    alert("Reservation Declined");
+                    window.location.reload(1);
+                }
+            });
+        });
+
+    </script>
+}
